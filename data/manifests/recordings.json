@@ -1,0 +1,96 @@
+{
+  "bucket": "noaa-passive-bioacoustic",
+  "archive": "DCLDE 2027 / SIMRES / eastpoint",
+  "records": [
+    {
+      "recording_id": "ICLISTENHF6156_20220710T124000.000Z_20220710T124459.996Z.flac",
+      "recording_date": "2022-07-10",
+      "s04_calls": 39,
+      "audio": {
+        "name": "dclde/2027/dclde_2027_killer_whales/simres/audio/eastpoint/ICLISTENHF6156_20220710T124000.000Z_20220710T124459.996Z.flac",
+        "size": "41323005",
+        "md5Hash": "3SJ/a4bKlA0MLe/qBUhZFw==",
+        "generation": "1774987326857044"
+      },
+      "annotations": {
+        "name": "dclde/2027/dclde_2027_killer_whales/simres/annotations/ICLISTENHF6156_20220710T124000.000Z_20220710T124459.996Z.Table.2.selections.txt",
+        "size": "22455",
+        "md5Hash": "EHOnaapGhoBS2LIRe6qMbw==",
+        "generation": "1774987325442825"
+      },
+      "audio_sha256": "fdef9bb54e0520652cb88fb74aca0c6ab242a9307a1dd01432e8e1e4bb83f18b"
+    },
+    {
+      "recording_id": "ICLISTENHF6156_20220711T151000.000Z_20220711T151459.996Z.flac",
+      "recording_date": "2022-07-11",
+      "s04_calls": 14,
+      "audio": {
+        "name": "dclde/2027/dclde_2027_killer_whales/simres/audio/eastpoint/ICLISTENHF6156_20220711T151000.000Z_20220711T151459.996Z.flac",
+        "size": "40157363",
+        "md5Hash": "Imiy6vV3WHArVY+NQY390A==",
+        "generation": "1774987326919860"
+      },
+      "annotations": {
+        "name": "dclde/2027/dclde_2027_killer_whales/simres/annotations/ICLISTENHF6156_20220711T151000.000Z_20220711T151459.996Z.Table.4.selections.txt",
+        "size": "73132",
+        "md5Hash": "vm+KPLf3LVL2t3Q4OpWKpA==",
+        "generation": "1774987325526429"
+      },
+      "audio_sha256": "fc1673ed6fec489cbff6aab4b158cab2f03538e625554e817d73f01b59a199bf"
+    },
+    {
+      "recording_id": "ICLISTENHF6156_20220713T005000.000Z_20220713T005459.996Z.flac",
+      "recording_date": "2022-07-13",
+      "s04_calls": 6,
+      "audio": {
+        "name": "dclde/2027/dclde_2027_killer_whales/simres/audio/eastpoint/ICLISTENHF6156_20220713T005000.000Z_20220713T005459.996Z.flac",
+        "size": "38611182",
+        "md5Hash": "bsgPqYqCc5V4v/6gC8iK7w==",
+        "generation": "1774987327167369"
+      },
+      "annotations": {
+        "name": "dclde/2027/dclde_2027_killer_whales/simres/annotations/ICLISTENHF6156_20220713T005000.000Z_20220713T005459.996Z.Table.18.selections.txt",
+        "size": "19799",
+        "md5Hash": "yPdX2oKWGRXkuyW7FYYYfQ==",
+        "generation": "1774987325739220"
+      },
+      "audio_sha256": "1e795fb644f7dc4d482523ffd16d36aa2d545d1cf0c097c273a2cca797b2e46b"
+    },
+    {
+      "recording_id": "ICLISTENHF6156_20220725T141000.000Z_20220725T141459.996Z.flac",
+      "recording_date": "2022-07-25",
+      "s04_calls": 52,
+      "audio": {
+        "name": "dclde/2027/dclde_2027_killer_whales/simres/audio/eastpoint/ICLISTENHF6156_20220725T141000.000Z_20220725T141459.996Z.flac",
+        "size": "39741399",
+        "md5Hash": "CDbMkThqQZ+doFS547Q7wA==",
+        "generation": "1774987327535014"
+      },
+      "annotations": {
+        "name": "dclde/2027/dclde_2027_killer_whales/simres/annotations/ICLISTENHF6156_20220725T141000.000Z_20220725T141459.996Z.Table.4.selections.txt",
+        "size": "25760",
+        "md5Hash": "c8QXQfc1CsHxV/WU2kryGg==",
+        "generation": "1774987326154350"
+      },
+      "audio_sha256": "7ab4e9644e0972936c104f19db1b8cbf45b432330c5900e3d7e555ef3bf425e7"
+    },
+    {
+      "recording_id": "ICLISTENHF6156_20220729T184000.000Z_20220729T184459.996Z.flac",
+      "recording_date": "2022-07-29",
+      "s04_calls": 26,
+      "audio": {
+        "name": "dclde/2027/dclde_2027_killer_whales/simres/audio/eastpoint/ICLISTENHF6156_20220729T184000.000Z_20220729T184459.996Z.flac",
+        "size": "40938126",
+        "md5Hash": "EMDhROhPHz0XIY3Idwg9lQ==",
+        "generation": "1774987327615924"
+      },
+      "annotations": {
+        "name": "dclde/2027/dclde_2027_killer_whales/simres/annotations/ICLISTENHF6156_20220729T184000.000Z_20220729T184459.996Z.Table.2.selections.txt",
+        "size": "23621",
+        "md5Hash": "L6VxvqG69574PfNKH19E9g==",
+        "generation": "1774987326192811"
+      },
+      "audio_sha256": "773de4971bf6bc5348af6a4ef7693dccc6171988cf67ee8b19b7fb7e6bf489f8"
+    }
+  ]
+}

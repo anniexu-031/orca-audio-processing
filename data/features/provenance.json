@@ -1,0 +1,48 @@
+{
+  "source": "Subset of high-confidence confirmed Southern Resident KW S04 calls from original Raven selections",
+  "original_call_count": 137,
+  "recording_dates": 5,
+  "source_csvs": [
+    {
+      "filename": "training_calls.csv",
+      "sha256": "5934ebeac2f367645b80f22f353dbf48f9c2ff643e5dc74e86e4ed16e5bbfb0a",
+      "input_rows": 204,
+      "eligible_rows": 204
+    },
+    {
+      "filename": "calls.csv",
+      "sha256": "28bc47e9a3747dfaaf9bf3f68c592e1645e4dc81fdb1a98961d78b35fe08fe0b",
+      "input_rows": 230,
+      "eligible_rows": 66
+    }
+  ],
+  "feature_config": {
+    "version": 1,
+    "sample_rate": 64000,
+    "window_samples": 2048,
+    "hop_samples": 512,
+    "min_hz": 80.0,
+    "max_hz": 24000.0,
+    "bands": 32,
+    "cepstral_coefficients": 16,
+    "floor_db": -80.0
+  },
+  "audio_sha256": {
+    "ICLISTENHF6156_20220710T124000.000Z_20220710T124459.996Z.flac": "fdef9bb54e0520652cb88fb74aca0c6ab242a9307a1dd01432e8e1e4bb83f18b",
+    "ICLISTENHF6156_20220711T151000.000Z_20220711T151459.996Z.flac": "fc1673ed6fec489cbff6aab4b158cab2f03538e625554e817d73f01b59a199bf",
+    "ICLISTENHF6156_20220713T005000.000Z_20220713T005459.996Z.flac": "1e795fb644f7dc4d482523ffd16d36aa2d545d1cf0c097c273a2cca797b2e46b",
+    "ICLISTENHF6156_20220725T141000.000Z_20220725T141459.996Z.flac": "7ab4e9644e0972936c104f19db1b8cbf45b432330c5900e3d7e555ef3bf425e7",
+    "ICLISTENHF6156_20220729T184000.000Z_20220729T184459.996Z.flac": "773de4971bf6bc5348af6a4ef7693dccc6171988cf67ee8b19b7fb7e6bf489f8"
+  },
+  "feature_code_sha256": "99b9f9ae8b5c96ae203acb2a87c2b03fa5ea3ddecd04fd8935063e071e0666b3",
+  "manifest_sha256": "0551c6f043c91af2859ea2c233a64e7d8d89f1cc11eda01b41ecb1b5cb226c2e",
+  "features_sha256": "fc07da45319877057104400a200bbeaab0f48bc752b87852a33c1cae27e00e9e",
+  "source_labels_changed": false,
+  "manual_review_status": "No new individual-label review claimed",
+  "scalar_feature_definitions": {
+    "duration_s": "source end_s minus start_s",
+    "rms_ac_digital": "standard deviation of original digital samples; not calibrated SPL; not log-transformed",
+    "spectral_peak_hz": "maximum of full-band Welch PSD; not fundamental pitch",
+    "spectral_centroid_hz": "power-weighted frequency mean of full-band Welch PSD"
+  }
+}

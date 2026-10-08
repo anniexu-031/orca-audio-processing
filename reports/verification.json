@@ -1,0 +1,36 @@
+{
+  "data_calls": 137,
+  "source_label": "S04",
+  "recording_dates": 5,
+  "package_version": "0.2.0",
+  "unit_tests_passed": 14,
+  "source_raven_labels_and_times_verified": true,
+  "original_audio_and_annotation_checksums_verified": true,
+  "all_features_recomputed_and_compared": true,
+  "audio_preview_command_tested": true,
+  "pinned_remote_download_tested": true,
+  "python_wheel_build_passed": true,
+  "segmented_multiclass_classifier_trained": false,
+  "continuous_detector_trained": true,
+  "detector_features": 56,
+  "detector_model_format": "Portable JSON scaler and logistic regression coefficients",
+  "detector_date_holdout_splits_verified": true,
+  "serialized_scores_compared_with_sklearn": true,
+  "annotation_free_scans_tested": {
+    "recordings": 2,
+    "duration_seconds_each": 300,
+    "training_recording_candidates": 42,
+    "additional_recording_candidates": 41,
+    "accuracy_claim": false
+  },
+  "detector_event_metrics_independently_checked": {
+    "reference_calls": 137,
+    "matched_events": 33,
+    "candidate_events": 221,
+    "annotation_recall": 0.24087591240875914,
+    "annotation_precision": 0.1493212669683258,
+    "matching": "Greedy one-to-one interval IoU >= 0.3"
+  },
+  "candidate_spectrogram_visually_inspected": true,
+  "limitations": "Exploratory development evaluation, weak background labels, incomplete reference annotations, and no independent final test."
+}

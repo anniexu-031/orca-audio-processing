@@ -1,0 +1,248 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>S04 detector baseline evaluation</title>
+    <style>body{font:16px/1.55 system-ui;max-width:1100px;margin:35px auto;padding:0 20px;color:#17344c}table{border-collapse:collapse;font-size:13px}td,th{border:1px solid #cbd6df;padding:6px}pre{white-space:pre-wrap;background:#edf3f7;padding:15px}.scroll{overflow:auto}</style>
+    <h1>S04 continuous-audio detector baseline</h1><p>137 reference S04 calls · 5 dates · 56 window features.</p>
+    <p>Fixed logistic regression, 0.8-second windows, 0.2-second steps. Each evaluation recording was scanned by a model trained without its entire recording date.</p>
+    <p><strong>Exploratory results.</strong> Unannotated regions supply background proxies, not verified negatives. Available annotations may omit calls.
+    Event precision/recall are referenced to the available S04 intervals, with greedy one-to-one IoU matching. Scores are uncalibrated.</p>
+    <h2>Annotation-referenced event results</h2><pre>{
+  &quot;annotation_precision&quot;: 0.1493212669683258,
+  &quot;annotation_recall&quot;: 0.24087591240875914,
+  &quot;f1&quot;: 0.18435754189944134,
+  &quot;candidate_events&quot;: 221,
+  &quot;matched_events&quot;: 33,
+  &quot;unmatched_events&quot;: 188,
+  &quot;reference_calls&quot;: 137,
+  &quot;unmatched_events_per_hour&quot;: 451.2,
+  &quot;matching&quot;: &quot;Greedy one-to-one interval IoU &gt;= 0.3&quot;,
+  &quot;note&quot;: &quot;Unmatched detections can include unannotated true calls; this is annotation-referenced performance.&quot;
+}</pre>
+    <h2>By held-out date</h2><div class="scroll"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>recording_id</th>
+      <th>heldout_date</th>
+      <th>duration_s</th>
+      <th>reference_calls</th>
+      <th>candidate_events</th>
+      <th>matched_events</th>
+      <th>unmatched_events</th>
+      <th>missed_reference_calls</th>
+      <th>annotation_precision</th>
+      <th>annotation_recall</th>
+      <th>unmatched_events_per_hour</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ICLISTENHF6156_20220710T124000.000Z_20220710T124459.996Z.flac</td>
+      <td>2022-07-10</td>
+      <td>300.000</td>
+      <td>39</td>
+      <td>81</td>
+      <td>12</td>
+      <td>69</td>
+      <td>27</td>
+      <td>0.148</td>
+      <td>0.308</td>
+      <td>828.000</td>
+    </tr>
+    <tr>
+      <td>ICLISTENHF6156_20220711T151000.000Z_20220711T151459.996Z.flac</td>
+      <td>2022-07-11</td>
+      <td>300.000</td>
+      <td>14</td>
+      <td>60</td>
+      <td>6</td>
+      <td>54</td>
+      <td>8</td>
+      <td>0.100</td>
+      <td>0.429</td>
+      <td>648.000</td>
+    </tr>
+    <tr>
+      <td>ICLISTENHF6156_20220713T005000.000Z_20220713T005459.996Z.flac</td>
+      <td>2022-07-13</td>
+      <td>300.000</td>
+      <td>6</td>
+      <td>22</td>
+      <td>3</td>
+      <td>19</td>
+      <td>3</td>
+      <td>0.136</td>
+      <td>0.500</td>
+      <td>228.000</td>
+    </tr>
+    <tr>
+      <td>ICLISTENHF6156_20220725T141000.000Z_20220725T141459.996Z.flac</td>
+      <td>2022-07-25</td>
+      <td>300.000</td>
+      <td>52</td>
+      <td>19</td>
+      <td>0</td>
+      <td>19</td>
+      <td>52</td>
+      <td>0.000</td>
+      <td>0.000</td>
+      <td>228.000</td>
+    </tr>
+    <tr>
+      <td>ICLISTENHF6156_20220729T184000.000Z_20220729T184459.996Z.flac</td>
+      <td>2022-07-29</td>
+      <td>300.000</td>
+      <td>26</td>
+      <td>39</td>
+      <td>12</td>
+      <td>27</td>
+      <td>14</td>
+      <td>0.308</td>
+      <td>0.462</td>
+      <td>324.000</td>
+    </tr>
+  </tbody>
+</table></div>
+    <h2>Window label sources</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>recording_date</th>
+      <th>label_source</th>
+      <th>windows</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2022-07-10</td>
+      <td>ambiguous_other_annotation</td>
+      <td>243</td>
+    </tr>
+    <tr>
+      <td>2022-07-10</td>
+      <td>ambiguous_s04_edge_or_label</td>
+      <td>151</td>
+    </tr>
+    <tr>
+      <td>2022-07-10</td>
+      <td>annotated_non_s04</td>
+      <td>26</td>
+    </tr>
+    <tr>
+      <td>2022-07-10</td>
+      <td>annotated_s04</td>
+      <td>131</td>
+    </tr>
+    <tr>
+      <td>2022-07-10</td>
+      <td>unannotated_background_proxy</td>
+      <td>946</td>
+    </tr>
+    <tr>
+      <td>2022-07-11</td>
+      <td>ambiguous_other_annotation</td>
+      <td>878</td>
+    </tr>
+    <tr>
+      <td>2022-07-11</td>
+      <td>ambiguous_s04_edge_or_label</td>
+      <td>66</td>
+    </tr>
+    <tr>
+      <td>2022-07-11</td>
+      <td>annotated_non_s04</td>
+      <td>292</td>
+    </tr>
+    <tr>
+      <td>2022-07-11</td>
+      <td>annotated_s04</td>
+      <td>41</td>
+    </tr>
+    <tr>
+      <td>2022-07-11</td>
+      <td>unannotated_background_proxy</td>
+      <td>220</td>
+    </tr>
+    <tr>
+      <td>2022-07-13</td>
+      <td>ambiguous_other_annotation</td>
+      <td>419</td>
+    </tr>
+    <tr>
+      <td>2022-07-13</td>
+      <td>ambiguous_s04_edge_or_label</td>
+      <td>71</td>
+    </tr>
+    <tr>
+      <td>2022-07-13</td>
+      <td>annotated_non_s04</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <td>2022-07-13</td>
+      <td>annotated_s04</td>
+      <td>26</td>
+    </tr>
+    <tr>
+      <td>2022-07-13</td>
+      <td>unannotated_background_proxy</td>
+      <td>933</td>
+    </tr>
+    <tr>
+      <td>2022-07-25</td>
+      <td>ambiguous_other_annotation</td>
+      <td>291</td>
+    </tr>
+    <tr>
+      <td>2022-07-25</td>
+      <td>ambiguous_s04_edge_or_label</td>
+      <td>209</td>
+    </tr>
+    <tr>
+      <td>2022-07-25</td>
+      <td>annotated_non_s04</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>2022-07-25</td>
+      <td>annotated_s04</td>
+      <td>164</td>
+    </tr>
+    <tr>
+      <td>2022-07-25</td>
+      <td>unannotated_background_proxy</td>
+      <td>817</td>
+    </tr>
+    <tr>
+      <td>2022-07-29</td>
+      <td>ambiguous_other_annotation</td>
+      <td>339</td>
+    </tr>
+    <tr>
+      <td>2022-07-29</td>
+      <td>ambiguous_s04_edge_or_label</td>
+      <td>109</td>
+    </tr>
+    <tr>
+      <td>2022-07-29</td>
+      <td>annotated_non_s04</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>2022-07-29</td>
+      <td>annotated_s04</td>
+      <td>81</td>
+    </tr>
+    <tr>
+      <td>2022-07-29</td>
+      <td>unannotated_background_proxy</td>
+      <td>960</td>
+    </tr>
+  </tbody>
+</table>
+    <h2>Window-level development results</h2><pre>{
+  &quot;precision&quot;: 0.20557491289198607,
+  &quot;recall&quot;: 0.7990970654627539,
+  &quot;f1&quot;: 0.32702078521939953,
+  &quot;average_precision&quot;: 0.6013146165001991,
+  &quot;evaluated_windows&quot;: 4709,
+  &quot;note&quot;: &quot;Weak window labels; ambiguous windows excluded.&quot;
+}</pre>
+    <p>The final JSON model was refitted on all development recordings. Its performance on fresh dates has not been measured.</p>
+    <p><a href="metrics.json">Metrics</a> · <a href="heldout_candidates.csv">Held-out candidate intervals</a> · <a href="window_label_summary.csv">Label counts</a></p></html>
