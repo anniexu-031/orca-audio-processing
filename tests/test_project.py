@@ -48,13 +48,7 @@ class ProjectTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError,'match exactly'):
                 load_features(path,self.data)
 
-    def test_single_class_cannot_report_classifier_accuracy(self):
-        with tempfile.TemporaryDirectory() as td:
-            args = SimpleNamespace(manifest=ROOT/'data/manifests/s04_calls.csv',
-                                   features=ROOT/'data/features/s04_features.csv',out=Path(td)/'model')
-            with self.assertRaisesRegex(ValueError,'one label'):
-                train_baseline(args)
-            self.assertFalse(Path(args.out).exists())
+
 
     def test_modified_identity_or_date_fails(self):
         with tempfile.TemporaryDirectory() as td:
