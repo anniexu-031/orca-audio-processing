@@ -19,8 +19,8 @@ from .pipeline import DEFAULT_FEATURES, load_manifest, load_features, write_json
 
 def train_baseline(args):
     data = load_manifest(args.manifest)
-    # if data.call_type.nunique() < 2:
-    #     raise ValueError('S04-only data has one label. Add reviewed examples of at least one other call type before supervised classification. Use inspect for the current descriptive S04 profile.')
+    if data.call_type.nunique() < 2:
+        raise ValueError('not enough labels')
     features = load_features(args.features,data)
     if not set(DEFAULT_FEATURES) <= set(features):
         raise ValueError('Baseline needs duration_s and spectral_centroid_hz.')
